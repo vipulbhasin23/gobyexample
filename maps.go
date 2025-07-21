@@ -20,4 +20,9 @@ func main() {
 
 	fmt.Println("Number of key/value pairs:", len(m))
 
+	delete(m, "k1")
+	fmt.Println("Delete key/value pair for k1:", m)
+
+	clear(m)
+	fmt.Println("Clear map using the built-in clear:", m)
 }

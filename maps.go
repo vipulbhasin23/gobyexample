@@ -31,4 +31,7 @@ func main() {
 
 	clear(m)
 	fmt.Println("Clear map using the built-in clear:", m)
+
+	n := map[string]int{"foo": 1, "bar": 2}
+	fmt.Println("Map literal:", n)
 }

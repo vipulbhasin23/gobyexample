@@ -22,4 +22,8 @@ func main() {
 	s = append(s, "d")
 	s = append(s, "e", "f")
 	fmt.Println("appended:", s)
+
+	c := make([]string, len(s))
+	copy(c, s)
+	fmt.Println("copy:", c)
 }

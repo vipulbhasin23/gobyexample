@@ -17,4 +17,7 @@ func main() {
 
 	v3 := m["k3"]
 	fmt.Println("Value for k3(not present):", v3)
+
+	fmt.Println("Number of key/value pairs:", len(m))
+
 }

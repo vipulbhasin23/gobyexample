@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"maps"
 )
 
 func main() {
@@ -34,4 +35,9 @@ func main() {
 
 	n := map[string]int{"foo": 1, "bar": 2}
 	fmt.Println("Map literal:", n)
+
+	n2 := map[string]int{"foo": 1, "bar": 2}
+	if maps.Equal(n, n2) {
+		fmt.Println("n == n2")
+	}
 }

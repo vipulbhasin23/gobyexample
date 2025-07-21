@@ -23,6 +23,12 @@ func main() {
 	delete(m, "k1")
 	fmt.Println("Delete key/value pair for k1:", m)
 
+	_, prs := m["k1"]
+	fmt.Println("Optional second return value for k1:", prs)
+
+	_, prs = m["k2"]
+	fmt.Println("Optional second return value for k2:", prs)
+
 	clear(m)
 	fmt.Println("Clear map using the built-in clear:", m)
 }

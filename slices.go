@@ -16,4 +16,10 @@ func main() {
 	s[2] = "c"
 	fmt.Println("set:", s)
 	fmt.Println("get:", s[2])
+
+	fmt.Println("len:", len(s))
+
+	s = append(s, "d")
+	s = append(s, "e", "f")
+	fmt.Println("appended:", s)
 }

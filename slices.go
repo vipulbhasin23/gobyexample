@@ -26,4 +26,14 @@ func main() {
 	c := make([]string, len(s))
 	copy(c, s)
 	fmt.Println("copy:", c)
+
+	// Slice operation
+	l := s[2:5]
+	fmt.Println("Sliced 1:", l)
+
+	l = s[:5]
+	fmt.Println("Sliced 2:", l)
+
+	l = s[2:]
+	fmt.Println("Sliced 3:", l)
 }

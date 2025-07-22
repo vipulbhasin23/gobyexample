@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func sums(nums ...int) {
-	fmt.Println(nums, " ")
+	fmt.Print(nums, " ")
 	total := 0
 
 	for _, num := range nums {

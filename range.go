@@ -15,4 +15,9 @@ func main() {
 			fmt.Println("Index of 3:", i)
 		}
 	}
+
+	kvs := map[string]string{"a": "apple", "b": "banana", "c": "cherry"}
+	for k, v := range kvs {
+		fmt.Printf("%s -> %s\n", k, v)
+	}
 }

@@ -26,5 +26,15 @@ func main() {
 		runeVal, width := utf8.DecodeRuneInString(s[i:])
 		fmt.Printf("%#U starts at %d\n", runeVal, i)
 		w = width
+
+		examineRune(runeVal)
+	}
+}
+
+func examineRune(r rune) {
+	if r == 't' {
+		fmt.Println("Found t")
+	} else if r == 'ส' {
+		fmt.Println("Found so sua")
 	}
 }
